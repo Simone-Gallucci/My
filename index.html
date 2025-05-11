@@ -316,55 +316,54 @@
                 </section>
             </main>
         </div>
-        <script>
-        const { createApp } = Vue;
-        
-        createApp({
-            data() {
-                return {
-                    currentSection: 'home',
-                    contactForm: {
-                    name: '',
-                    email: '',
-                    subject: '',
-                    message: ''
-                    },
-                    projects: [
-                    {
-                        title: 'Sito Web Personale',
-                        description: 'Un sito web personale sviluppato con HTML, CSS e JavaScript per mostrare le mie competenze e progetti.',
-                        image: 'tech.jpg',
-                        technologies: ['HTML', 'Vue.js', 'Bootstrap'],
-                        link: '#'
-                    },
-                    {
-                        title: 'Intelligenza Artificiale',
-                        description: 'Sistema di intelligenza artificiale sviluppato con Python e API per la gestione della IA.',
-                        image: 'tech.jpg',
-                        technologies: ['Python', 'API'],
-                        link: '#'
-                    },
-                    {
-                        title: 'Mini Software',
-                        description: 'Collezione di piccoli software e applicazioni sviluppate in C e C++.',
-                        image: 'tech.jpg',
-                        technologies: ['C', 'C++'],
-                        link: '#'
-                    }
-                    ]
-                }
-            },
-            methods: {
-            submitForm() {
-                alert('Messaggio inviato con successo!');
-                this.contactForm.name = '';
-                this.contactForm.email = '';
-                this.contactForm.subject = '';
-                this.contactForm.message = '';
-            }
-            }
-        }).mount('#app');
-        </script>
 
+        <script>
+            const { createApp } = Vue;
+            createApp({
+                data() {
+                    return {
+                        currentSection: 'home',
+                        contactForm: {
+                        name: '',
+                        email: '',
+                        subject: '',
+                        message: ''
+                        },
+                        projects: [
+                        {
+                            title: 'Sito Web Personale',
+                            description: 'Un sito web personale sviluppato con HTML, CSS e JavaScript per mostrare le mie competenze e progetti.',
+                            image: 'tech.jpg',
+                            technologies: ['HTML', 'Vue.js', 'Bootstrap'],
+                            link: '#'
+                        },
+                        {
+                            title: 'Intelligenza Artificiale',
+                            description: 'Sistema di intelligenza artificiale sviluppato con Python e API per la gestione della IA.',
+                            image: 'tech.jpg',
+                            technologies: ['Python', 'API'],
+                            link: '#'
+                        },
+                        {
+                            title: 'Mini Software',
+                            description: 'Collezione di piccoli software e applicazioni sviluppate in C e C++.',
+                            image: 'tech.jpg',
+                            technologies: ['C', 'C++'],
+                            link: '#'
+                        }
+                        ]
+                    }
+                },
+                methods: {
+                submitForm() {
+                    alert('Messaggio inviato con successo!');
+                    this.contactForm.name = '';
+                    this.contactForm.email = '';
+                    this.contactForm.subject = '';
+                    this.contactForm.message = '';
+                }
+                }
+            }).mount('#app');
+        </script>
     </body>
 </html>
