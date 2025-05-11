@@ -38,6 +38,10 @@
 
     .content {
       padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 70px);
     }
 
     .card {
@@ -46,7 +50,7 @@
       padding: 25px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       max-width: 500px;
-      margin: auto;
+      width: 100%;
       text-align: center;
     }
 
@@ -80,20 +84,18 @@
 
     <div class="content">
       <!-- HOME -->
-      <div v-if="sezioneCorrente === 'Home'">
-        <div class="card">
-          <h2>{{ nome }}</h2>
-          <p><strong>Data di nascita:</strong> <br>{{ dataNascita }}</p>
-          <p><strong>Professione:</strong><br> {{ professione }}</p>
-          <p><strong>Passioni:</strong><br> {{ passioni }}</p>
-          <blockquote>“Il codice è arte. E io sono un artista del digitale.”</blockquote>
-        </div>
+      <div v-if="sezioneCorrente === 'Home'" class="card">
+        <h2>{{ nome }}</h2>
+        <p><strong>Data di nascita:</strong> <br>{{ dataNascita }}</p>
+        <p><strong>Professione:</strong><br> {{ professione }}</p>
+        <p><strong>Passioni:</strong><br> {{ passioni }}</p>
+        <blockquote>"Il codice è arte. E io sono un artista del digitale."</blockquote>
       </div>
 
       <!-- PROGETTI -->
-      <div v-if="sezioneCorrente === 'Progetti'">
-        <h1>I miei progetti</h1>
-        <ul>
+      <div v-if="sezioneCorrente === 'Progetti'" class="card">
+        <h2>I miei progetti</h2>
+        <ul style="list-style-position: inside; padding: 0;">
           <li>Assistente Virtuale J.A.R.V.I.S</li>
           <li>Gioco a tema Cyber Security</li>
           <li>Bot Telegram AI personalizzati</li>
@@ -101,8 +103,8 @@
       </div>
 
       <!-- INFO -->
-      <div v-if="sezioneCorrente === 'Info'">
-        <h1>Informazioni</h1>
+      <div v-if="sezioneCorrente === 'Info'" class="card">
+        <h2>Informazioni</h2>
         <p>Sviluppo software, automazione, AI, sicurezza informatica... il tutto condito con passione e caffè nero.</p>
       </div>
     </div>
