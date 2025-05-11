@@ -12,7 +12,28 @@
                 background: linear-gradient(to right, #a8d8e8, #e0f7fa);
                 overflow: hidden; /* Prevent scrolling */
                 height: 100vh; /* Set body height to viewport height */
-                font-size: 0.9rem; /* Reduce font size */
+                font-size: 0.8rem; /* Further reduce font size */
+            }
+            h1 {
+                font-size: 1.5rem; /* Reduce h1 size */
+            }
+            h2 {
+                font-size: 1.25rem; /* Reduce h2 size */
+            }
+            h3 {
+                font-size: 1rem; /* Reduce h3 size */
+            }
+            p {
+                font-size: 0.9rem; /* Reduce paragraph size */
+            }
+            .fade-in {
+                opacity: 0;
+                animation: fadeIn 1s forwards;
+            }
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
             }
         </style>
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.36/dist/vue.global.js"></script>
@@ -51,7 +72,7 @@
 
             <main>
                 <!-- Sezione Home -->
-                <section v-if="currentSection === 'home'" class="section-container home-section">
+                <section v-if="currentSection === 'home'" class="section-container home-section fade-in">
                     <div class="container">
                         <div class="row align-items-center min-vh-100">
                             <div class="col-lg-6">
@@ -65,7 +86,7 @@
                 </section>
 
                 <!-- Sezione Chi Sono -->
-                <section v-if="currentSection === 'about'" class="section-container about-section">
+                <section v-if="currentSection === 'about'" class="section-container about-section fade-in">
                     <div class="container">
                         <div class="row min-vh-100 align-items-center">
                             <div class="col-12 text-center mb-5">
@@ -73,7 +94,7 @@
                                 <div class="divider mx-auto"></div>
                             </div>
                             <div class="col-lg-6">
-                                <img src="ME.jpg" alt="Chi Sono" class="img-fluid rounded shadow">
+                                <img src="ME.jpg" alt="Chi Sono" class="img-fluid rounded shadow" style="border: 2px solid black; width: 80%;">
                             </div>
                             <div class="col-lg-6">
                                 <h3 class="mb-4">Chi Sono</h3>
@@ -104,7 +125,7 @@
                 </section>
 
                 <!-- Sezione Competenze -->
-                <section v-if="currentSection === 'skills'" class="section-container skills-section">
+                <section v-if="currentSection === 'skills'" class="section-container skills-section fade-in">
                     <div class="container">
                         <div class="row min-vh-100 align-items-center">
                             <div class="col-12 text-center mb-5">
@@ -224,7 +245,7 @@
                 </section>
 
                 <!-- Sezione Progetti -->
-                <section v-if="currentSection === 'projects'" class="section-container projects-section">
+                <section v-if="currentSection === 'projects'" class="section-container projects-section fade-in">
                     <div class="container">
                         <div class="row min-vh-100">
                             <div class="col-12 text-center mb-5">
@@ -249,7 +270,7 @@
                 </section>
 
                 <!-- Sezione Contatti -->
-                <section v-if="currentSection === 'contact'" class="section-container contact-section">
+                <section v-if="currentSection === 'contact'" class="section-container contact-section fade-in">
                     <div class="container">
                         <div class="row min-vh-100 align-items-center">
                             <div class="col-12 text-center mb-5">
