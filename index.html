@@ -88,24 +88,22 @@
         <h2>{{ nome }}</h2>
         <p><strong>Data di nascita:</strong> <br>{{ dataNascita }}</p>
         <p><strong>Professione:</strong><br> {{ professione }}</p>
-        <p><strong>Passioni:</strong><br> {{ passioni }}</p>
         <blockquote>"Il codice è arte. E io sono un artista del digitale."</blockquote>
       </div>
 
-      <!-- PROGETTI -->
-      <div v-if="sezioneCorrente === 'Progetti'" class="card">
-        <h2>I miei progetti</h2>
+      <!-- HOBBY -->
+      <div v-if="sezioneCorrente === 'Hobby'" class="card">
+        <h2>I miei hobby</h2>
         <ul style="list-style-position: inside; padding: 0;">
-          <li>Assistente Virtuale J.A.R.V.I.S</li>
-          <li>Gioco a tema Cyber Security</li>
-          <li>Bot Telegram AI personalizzati</li>
-        </ul>
+          <li>Programmare</li>
+          <li>Ascoltare musica</li>
+          <li>Guardare film e serie Tv</li>        </ul>
       </div>
 
       <!-- INFO -->
       <div v-if="sezioneCorrente === 'Info'" class="card">
         <h2>Informazioni</h2>
-        <p>Sviluppo software, automazione, AI, sicurezza informatica... il tutto condito con passione e caffè nero.</p>
+        
       </div>
     </div>
   </div>
@@ -116,7 +114,7 @@
     createApp({
       data() {
         return {
-          sezioni: ['Home', 'Progetti', 'Info'],
+          sezioni: ['Home', 'Hobby', 'Info'],
           sezioneCorrente: 'Home',
           nome: 'Szymon Gallucci',
           dataNascita: '16 Luglio 2005',
