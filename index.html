@@ -76,18 +76,22 @@
                                 
                                 <h3 class="mt-4 mb-3">Formazione</h3>
                                 <div class="mb-3">
-                                    <h5>Laurea in Informatica</h5>
-                                    <p>Università della Tecnologia, 2018-2022</p>
+                                    <h5>Istituto Tecnico Industriale - Indirizzo Informatico</h5>
+                                    <p>Diploma di Istruzione Tecnica, 5 anni</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5>ITS - ICT & Cyber Security</h5>
+                                    <p>In corso</p>
                                 </div>
                                 
                                 <h3 class="mt-4 mb-3">Esperienza</h3>
                                 <div class="mb-3">
-                                    <h5>Sviluppatore Web Senior</h5>
-                                    <p>Tech Solutions Inc., 2022-Presente</p>
+                                    <h5>Tecnico</h5>
+                                    <p>Centro Sportivo MTA, Presente</p>
                                 </div>
                                 <div class="mb-3">
-                                    <h5>Sviluppatore Junior</h5>
-                                    <p>Digital Creations, 2020-2022</p>
+                                    <h5>Stage</h5>
+                                    <p>LogicalSystem, Estate 2025</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +112,7 @@
                                 
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>HTML/CSS</h5>
+                                        <h5>HTML/CSS/JavaScript</h5>
                                         <span>95%</span>
                                     </div>
                                     <div class="progress">
@@ -118,11 +122,21 @@
                                 
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>JavaScript</h5>
+                                        <h5>C/C++/C#</h5>
                                         <span>90%</span>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Python</h5>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"></div>
                                     </div>
                                 </div>
                                 
@@ -135,14 +149,24 @@
                                         <div class="progress-bar" role="progressbar" style="width: 85%"></div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skill-item mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <h5>Node.js</h5>
-                                        <span>80%</span>
+                                        <h5>SQL</h5>
+                                        <span>85%</span>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Windows/Linux</h5>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -213,9 +237,9 @@
                                             <span v-for="tech in project.technologies" :key="tech" class="badge bg-secondary me-1">{{ tech }}</span>
                                         </div>
                                     </div>
-                                    <div class="card-footer bg-transparent border-0">
+                                    <!-- <div class="card-footer bg-transparent border-0">
                                         <a :href="project.link" class="btn btn-outline-primary" target="_blank">Vedi Progetto</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -297,38 +321,38 @@
         
         createApp({
             data() {
-            return {
-                currentSection: 'home',
-                contactForm: {
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
-                },
-                projects: [
-                {
-                    title: 'E-commerce Website',
-                    description: 'Un sito di e-commerce completo con carrello, pagamenti e gestione ordini.',
-                    image: 'https://via.placeholder.com/350x200',
-                    technologies: ['Vue.js', 'Node.js', 'MongoDB'],
-                    link: '#'
-                },
-                {
-                    title: 'App di Gestione Progetti',
-                    description: 'Applicazione web per la gestione di progetti e attività in team.',
-                    image: 'https://via.placeholder.com/350x200',
-                    technologies: ['React', 'Firebase', 'Bootstrap'],
-                    link: '#'
-                },
-                {
-                    title: 'Portfolio Personale',
-                    description: 'Un portfolio responsive per mostrare i miei progetti e competenze.',
-                    image: 'https://via.placeholder.com/350x200',
-                    technologies: ['HTML/CSS', 'Vue.js', 'Bootstrap'],
-                    link: '#'
+                return {
+                    currentSection: 'home',
+                    contactForm: {
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                    },
+                    projects: [
+                    {
+                        title: 'Sito Web Personale',
+                        description: 'Un sito web personale sviluppato con HTML, CSS e JavaScript per mostrare le mie competenze e progetti.',
+                        image: 'https://via.placeholder.com/350x200',
+                        technologies: ['HTML', 'Vue.js', 'Bootstrap'],
+                        link: '#'
+                    },
+                    {
+                        title: 'Intelligenza Artificiale',
+                        description: 'Sistema di intelligenza artificiale sviluppato con Python e API per la gestione della IA.',
+                        image: 'https://via.placeholder.com/350x200',
+                        technologies: ['Python', 'API'],
+                        link: '#'
+                    },
+                    {
+                        title: 'Mini Software',
+                        description: 'Collezione di piccoli software e applicazioni sviluppate in C e C++.',
+                        image: 'https://via.placeholder.com/350x200',
+                        technologies: ['C', 'C++'],
+                        link: '#'
+                    }
+                    ]
                 }
-                ]
-            }
             },
             methods: {
             submitForm() {
