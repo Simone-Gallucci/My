@@ -229,7 +229,7 @@
                             
                             <div class="col-md-4 mb-4" v-for="(project, index) in projects" :key="index">
                                 <div class="card h-100 shadow">
-                                    <img :src="project.image" class="card-img-top" :alt="project.title">
+                                    <img :src="project.image" class="card-img-top" :alt="project.title" style="height: 200px; object-fit: cover;">
                                     <div class="card-body">
                                         <h5 class="card-title">{{ project.title }}</h5>
                                         <p class="card-text">{{ project.description }}</p>
@@ -340,14 +340,14 @@
                     {
                         title: 'Intelligenza Artificiale',
                         description: 'Sistema di intelligenza artificiale sviluppato con Python e API per la gestione della IA.',
-                        image: 'https://via.placeholder.com/350x200',
+                        image: 'tech.jpg',
                         technologies: ['Python', 'API'],
                         link: '#'
                     },
                     {
                         title: 'Mini Software',
                         description: 'Collezione di piccoli software e applicazioni sviluppate in C e C++.',
-                        image: 'https://via.placeholder.com/350x200',
+                        image: 'tech.jpg',
                         technologies: ['C', 'C++'],
                         link: '#'
                     }
