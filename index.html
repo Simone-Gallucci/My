@@ -2,7 +2,7 @@
 <html lang="it">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <title>Simone Gallucci - Portfolio Personale</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,6 +12,7 @@
                 background: linear-gradient(to right, #a8d8e8, #e0f7fa);
                 overflow: hidden; /* Prevent scrolling */
                 height: 100vh; /* Set body height to viewport height */
+                font-size: 0.9rem; /* Reduce font size */
             }
         </style>
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.36/dist/vue.global.js"></script>
@@ -59,9 +60,6 @@
                                 <p class="lead">Creo soluzioni web eleganti e funzionali con passione per il codice pulito e l'esperienza utente.</p>
                                 <button class="btn btn-primary btn-lg mt-3" @click="currentSection = 'contact'">Contattami</button>
                             </div>
-                            <!-- <div class="col-lg-6">
-                                <img src="https://via.placeholder.com/600x400" alt="Immagine Profilo" class="img-fluid rounded shadow">
-                            </div> -->
                         </div>
                     </div>
                 </section>
@@ -244,9 +242,6 @@
                                             <span v-for="tech in project.technologies" :key="tech" class="badge bg-secondary me-1">{{ tech }}</span>
                                         </div>
                                     </div>
-                                    <!-- <div class="card-footer bg-transparent border-0">
-                                        <a :href="project.link" class="btn btn-outline-primary" target="_blank">Vedi Progetto</a>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -283,13 +278,6 @@
                                             <span>+39 3331224518</span>
                                         </div>
                                     </div>
-                                    
-                                    <!-- <div class="social-links mt-4">
-                                        <a href="#" class="me-3 fs-4"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" class="me-3 fs-4"><i class="fab fa-github"></i></a>
-                                        <a href="#" class="me-3 fs-4"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="fs-4"><i class="fab fa-instagram"></i></a>
-                                    </div> -->
                                 </div>
                             </div>
                             
